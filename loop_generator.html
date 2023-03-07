@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">Loop Generator</h1>
+    <table style="margin: auto;">
+        <tr>
+            <td>Enter First Number:</td>
+            <td>
+                <input type="number" name="" id="fNum">
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Last Number: </td>
+            <td>
+                <input type="number" name="" id="lNum">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="button" value="Generate Loop" onclick="loop()" style="width: 100%;">
+            </td>
+        </tr>
+        <tr>
+            <td>Result</td>
+            <td align="center">
+                <input type="text" name="" id="res">
+            </td>
+            
+        </tr>
+    </table>
+
+    <script>
+        function loop(){
+            var a=document.getElementById('fNum').value;
+            var b=document.getElementById('lNum').value;
+            for(var i=a; i<=b; i++)
+            {
+                document.getElementById('res').value+=i;
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>
